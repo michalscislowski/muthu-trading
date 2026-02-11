@@ -18,6 +18,8 @@ const cormorant = Cormorant_Garamond({
   weight: ["300", "400", "500", "600", "700"],
 });
 
+const siteUrl = "https://muthu-trading.vercel.app";
+
 export const metadata: Metadata = {
   title: {
     default: "MGM Muthu International Trading | Your Trusted Export Provider",
@@ -25,6 +27,40 @@ export const metadata: Metadata = {
   },
   description:
     "Your trusted Full Export Provider with 15,000+ products, 70+ years of experience, and ISO 22000 certification. Quality brands at competitive prices from Portugal to the world.",
+  metadataBase: new URL(siteUrl),
+  openGraph: {
+    type: "website",
+    locale: "en_GB",
+    url: siteUrl,
+    siteName: "MGM Muthu International Trading",
+    title: "MGM Muthu International Trading | Your Trusted Export Provider",
+    description:
+      "Your trusted Full Export Provider with 15,000+ products, 70+ years of experience, and ISO 22000 certification. Quality brands at competitive prices from Portugal to the world.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "MGM Muthu International Trading | Your Trusted Export Provider",
+    description:
+      "Your trusted Full Export Provider with 15,000+ products, 70+ years of experience, and ISO 22000 certification.",
+  },
+  keywords: [
+    "MGM Muthu",
+    "International Trading",
+    "export provider",
+    "Portuguese products",
+    "food export",
+    "household appliances",
+    "health and beauty",
+    "cleaning products",
+    "bicycles",
+    "ISO 22000",
+    "B2B",
+    "wholesale",
+  ],
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
