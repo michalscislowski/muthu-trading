@@ -37,7 +37,7 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-burgundy-950/95 backdrop-blur-md shadow-lg py-3"
+          ? "bg-[#2a1820]/95 backdrop-blur-md shadow-lg py-3"
           : "bg-transparent py-5"
       }`}
     >
@@ -107,7 +107,7 @@ export default function Navbar() {
                   : "opacity-0 -translate-y-2 pointer-events-none"
               }`}
             >
-              <div className="bg-burgundy-900/95 backdrop-blur-md border border-burgundy-700/30 rounded-lg shadow-2xl py-2 min-w-[220px]">
+              <div className="bg-burgundy-800/95 backdrop-blur-md border border-burgundy-700/30 rounded-lg shadow-2xl py-2 min-w-[220px]">
                 {productLinks.map((link) => (
                   <Link
                     key={link.href}

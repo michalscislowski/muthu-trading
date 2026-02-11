@@ -19,12 +19,14 @@ const companyLinks = [
 
 export default function Footer() {
   return (
-    <footer className="relative bg-burgundy-950 text-cream-200 overflow-hidden">
+    <footer className="relative bg-[#2a1820] text-cream-200 overflow-hidden">
       {/* Decorative top border */}
-      <div className="h-px bg-gradient-to-r from-transparent via-gold-500 to-transparent" />
+      <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#911f36]/60 to-transparent" />
 
-      {/* Radial glow */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-burgundy-800/20 rounded-full blur-3xl pointer-events-none" />
+      {/* Radial glows — matching inspiration */}
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,rgba(145,31,54,0.2)_0%,transparent_40%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(145,31,54,0.15)_0%,transparent_50%)]" />
+      <div className="absolute top-0 right-0 w-96 h-96 bg-[#911f36]/10 rounded-full blur-3xl pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-6 pt-16 pb-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">

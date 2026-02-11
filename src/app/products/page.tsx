@@ -56,7 +56,7 @@ export default function ProductsPage() {
   return (
     <>
       {/* Hero Banner */}
-      <section className="relative pt-32 pb-20 bg-burgundy-950 overflow-hidden">
+      <section className="relative pt-32 pb-20 bg-[#2a1820] overflow-hidden">
         {/* Background image */}
         <div className="absolute inset-0">
           <Image
@@ -66,7 +66,8 @@ export default function ProductsPage() {
             className="object-cover opacity-20"
           />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-b from-burgundy-950/80 to-burgundy-950" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#1f1418]/95 via-[#2a1820]/85 to-[#2a1820]/60" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#911f36]/30 via-[#911f36]/15 to-transparent" />
         <div className="absolute inset-0 opacity-[0.03]" style={{
           backgroundImage: `repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(201,168,76,0.5) 35px, rgba(201,168,76,0.5) 36px)`,
         }} />

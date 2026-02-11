@@ -27,7 +27,7 @@ export default function CategoryPageLayout({
   return (
     <>
       {/* Hero Banner */}
-      <section className="relative pt-32 pb-20 bg-burgundy-950 overflow-hidden">
+      <section className="relative pt-32 pb-20 bg-[#2a1820] overflow-hidden">
         {heroImage && (
           <div className="absolute inset-0">
             <Image
@@ -38,7 +38,8 @@ export default function CategoryPageLayout({
             />
           </div>
         )}
-        <div className="absolute inset-0 bg-gradient-to-b from-burgundy-950/70 to-burgundy-950" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#1f1418]/95 via-[#2a1820]/85 to-[#2a1820]/60" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#911f36]/30 via-[#911f36]/15 to-transparent" />
         <div className="absolute inset-0 opacity-[0.03]" style={{
           backgroundImage: `repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(201,168,76,0.5) 35px, rgba(201,168,76,0.5) 36px)`,
         }} />
@@ -87,10 +88,10 @@ export default function CategoryPageLayout({
                           fill
                           className="object-cover img-zoom"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-burgundy-950/50 to-burgundy-950/10 group-hover:from-burgundy-950/40 group-hover:to-transparent transition-all duration-500" />
+                        <div className="absolute inset-0 bg-gradient-to-t from-burgundy-900/50 to-burgundy-900/10 group-hover:from-burgundy-900/40 group-hover:to-transparent transition-all duration-500" />
                       </>
                     ) : (
-                      <div className="absolute inset-0 bg-gradient-to-br from-burgundy-800 via-burgundy-900 to-burgundy-950" />
+                      <div className="absolute inset-0 bg-gradient-to-br from-burgundy-800 via-burgundy-900 to-burgundy-900" />
                     )}
                     {/* Decorative number */}
                     <span className="absolute top-3 left-4 font-heading text-white/15 text-5xl font-bold leading-none drop-shadow-sm">
@@ -125,9 +126,9 @@ export default function CategoryPageLayout({
       </section>
 
       {/* Inquiry Section */}
-      <section className="relative py-20 md:py-28 bg-burgundy-950 overflow-hidden noise-overlay">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-gold-500/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 left-0 w-72 h-72 bg-burgundy-800/20 rounded-full blur-3xl" />
+      <section className="relative py-20 md:py-28 bg-[#2a1820] overflow-hidden noise-overlay">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(145,31,54,0.25)_0%,transparent_50%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,rgba(145,31,54,0.2)_0%,transparent_40%)]" />
 
         <div className="relative z-10 max-w-3xl mx-auto px-6">
           <AnimateOnScroll className="text-center mb-12">

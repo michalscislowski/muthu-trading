@@ -1,28 +1,28 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-burgundy-950: #2d0a0a;
-  --color-burgundy-900: #3d0e0e;
-  --color-burgundy-800: #4a0e0e;
-  --color-burgundy-700: #6b1d1d;
-  --color-burgundy-600: #8b2c2c;
-  --color-burgundy-500: #a83a3a;
-  --color-burgundy-400: #c45050;
-  --color-burgundy-300: #d97878;
-  --color-burgundy-200: #e8a5a5;
-  --color-burgundy-100: #f3d0d0;
-  --color-burgundy-50: #faf0f0;
+  --color-burgundy-950: #1f1418;
+  --color-burgundy-900: #2a1820;
+  --color-burgundy-800: #3d2028;
+  --color-burgundy-700: #5c1422;
+  --color-burgundy-600: #7a1a2e;
+  --color-burgundy-500: #911f36;
+  --color-burgundy-400: #a82d45;
+  --color-burgundy-300: #c45a6e;
+  --color-burgundy-200: #d98a99;
+  --color-burgundy-100: #ebbcc5;
+  --color-burgundy-50: #f8e8ec;
 
-  --color-gold-600: #a68530;
-  --color-gold-500: #c9a84c;
-  --color-gold-400: #d4b96a;
-  --color-gold-300: #e0cb8e;
-  --color-gold-200: #ecddb3;
-  --color-gold-100: #f5edd5;
+  --color-gold-600: #9a7b3c;
+  --color-gold-500: #c9a962;
+  --color-gold-400: #e5d4a1;
+  --color-gold-300: #edd9ad;
+  --color-gold-200: #f2e6c7;
+  --color-gold-100: #f8f0de;
 
-  --color-cream-50: #fdfcfa;
-  --color-cream-100: #faf6f0;
-  --color-cream-200: #f0e8d8;
+  --color-cream-50: #fdfcfb;
+  --color-cream-100: #faf8f5;
+  --color-cream-200: #f0ede8;
   --color-cream-300: #e5d8c0;
 
   --font-heading: "Montserrat", sans-serif;

@@ -106,25 +106,16 @@ export default function HomePage() {
             quality={90}
           />
         </div>
-        {/* Dark overlay with burgundy tint */}
-        <div className="absolute inset-0 bg-burgundy-950/85" />
-        {/* Gold radial accents */}
-        <div
-          className="absolute inset-0"
-          style={{
-            backgroundImage:
-              "radial-gradient(ellipse at 20% 80%, rgba(201, 168, 76, 0.08) 0%, transparent 50%), radial-gradient(ellipse at 80% 20%, rgba(201, 168, 76, 0.06) 0%, transparent 50%)",
-          }}
-        />
-        {/* Geometric pattern */}
-        <div className="absolute inset-0 opacity-[0.04]" style={{
-          backgroundImage: `repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(201,168,76,0.4) 35px, rgba(201,168,76,0.4) 36px)`,
-        }} />
+        {/* Overlays — exact match to inspiration site */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#1f1418]/95 via-[#2a1820]/85 to-[#2a1820]/60" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#911f36]/45 via-[#911f36]/20 to-[#911f36]/35" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#1f1418] via-transparent to-transparent opacity-80" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,rgba(145,31,54,0.3)_0%,transparent_50%)]" />
 
         <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
           {/* Overline */}
           <div className="fade-up visible" style={{ animationDelay: "0.2s" }}>
-            <span className="inline-block font-heading text-gold-400 text-xs tracking-[0.3em] uppercase mb-6 border border-gold-500/30 px-5 py-2.5 backdrop-blur-sm bg-burgundy-950/30">
+            <span className="inline-block font-heading text-gold-400 text-xs tracking-[0.3em] uppercase mb-6 border border-gold-500/30 px-5 py-2.5 backdrop-blur-sm bg-burgundy-900/30">
               MGM Muthu — Est. with 70+ Years of Excellence
             </span>
           </div>
@@ -163,7 +154,7 @@ export default function HomePage() {
           </div>
 
           {/* Stats row */}
-          <div className="fade-up visible mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 backdrop-blur-sm bg-burgundy-950/20 rounded-2xl py-8 px-6 border border-white/5" style={{ animationDelay: "1s" }}>
+          <div className="fade-up visible mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 backdrop-blur-sm bg-burgundy-900/20 rounded-2xl py-8 px-6 border border-white/5" style={{ animationDelay: "1s" }}>
             {stats.map((stat, i) => (
               <div key={i} className="text-center">
                 <div className="font-heading font-bold text-3xl md:text-4xl text-gold-400 drop-shadow-sm">
@@ -237,7 +228,7 @@ export default function HomePage() {
                     fill
                     className="object-cover img-zoom"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-burgundy-950/40 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-burgundy-900/40 to-transparent" />
                 </div>
 
                 {/* Overlapping smaller image */}
@@ -251,7 +242,7 @@ export default function HomePage() {
                 </div>
 
                 {/* Floating stat badge */}
-                <div className="absolute -top-4 -left-4 bg-burgundy-950 rounded-xl px-6 py-5 shadow-2xl border border-gold-500/20 pulse-gold">
+                <div className="absolute -top-4 -left-4 bg-burgundy-800 rounded-xl px-6 py-5 shadow-2xl border border-gold-500/20 pulse-gold">
                   <span className="block font-heading font-bold text-3xl text-gold-400">70+</span>
                   <span className="block font-heading text-cream-200/60 text-[10px] tracking-[0.15em] uppercase mt-1">
                     Years Exp.
@@ -267,10 +258,11 @@ export default function HomePage() {
       </section>
 
       {/* ============ SERVICES ============ */}
-      <section id="services" className="relative py-24 md:py-32 bg-burgundy-950 overflow-hidden noise-overlay">
-        {/* Background accents */}
-        <div className="absolute top-0 right-0 w-96 h-96 bg-burgundy-800/20 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-gold-500/5 rounded-full blur-3xl" />
+      <section id="services" className="relative py-24 md:py-32 bg-[#2a1820] overflow-hidden noise-overlay">
+        {/* Warm radial accents like inspiration */}
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(145,31,54,0.25)_0%,transparent_50%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,rgba(145,31,54,0.2)_0%,transparent_40%)]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-gold-500/5 via-transparent to-gold-500/[0.03]" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-6">
           <AnimateOnScroll className="text-center mb-16">
@@ -300,7 +292,7 @@ export default function HomePage() {
                     />
                   </div>
                   {/* Dark overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-burgundy-950 via-burgundy-950/90 to-burgundy-950/70 group-hover:via-burgundy-950/85 group-hover:to-burgundy-950/60 transition-all duration-700" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#1f1418] via-[#2a1820]/85 to-[#2a1820]/70 group-hover:via-[#2a1820]/80 group-hover:to-[#2a1820]/60 transition-all duration-700" />
 
                   <div className="relative z-10 p-8 md:p-10">
                     {/* Icon */}
@@ -332,7 +324,7 @@ export default function HomePage() {
           <AnimateOnScroll>
             <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12">
               <div className="flex items-center gap-5">
-                <div className="w-16 h-16 rounded-full bg-burgundy-950 flex items-center justify-center pulse-gold shrink-0">
+                <div className="w-16 h-16 rounded-full bg-burgundy-800 flex items-center justify-center pulse-gold shrink-0">
                   <svg className="w-8 h-8 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                   </svg>
@@ -346,7 +338,7 @@ export default function HomePage() {
               <div className="hidden md:block w-px h-12 bg-cream-300" />
 
               <div className="flex items-center gap-5">
-                <div className="w-16 h-16 rounded-full bg-burgundy-950 flex items-center justify-center pulse-gold shrink-0">
+                <div className="w-16 h-16 rounded-full bg-burgundy-800 flex items-center justify-center pulse-gold shrink-0">
                   <svg className="w-8 h-8 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
@@ -360,7 +352,7 @@ export default function HomePage() {
               <div className="hidden md:block w-px h-12 bg-cream-300" />
 
               <div className="flex items-center gap-5">
-                <div className="w-16 h-16 rounded-full bg-burgundy-950 flex items-center justify-center pulse-gold shrink-0">
+                <div className="w-16 h-16 rounded-full bg-burgundy-800 flex items-center justify-center pulse-gold shrink-0">
                   <svg className="w-8 h-8 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -411,7 +403,7 @@ export default function HomePage() {
                       className="object-cover img-zoom"
                     />
                     {/* Dark gradient overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-burgundy-950/90 via-burgundy-950/40 to-burgundy-950/20 group-hover:from-burgundy-950/80 group-hover:via-burgundy-950/30 transition-all duration-700" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#1f1418]/95 via-[#2a1820]/50 to-[#2a1820]/30 group-hover:from-[#1f1418]/90 group-hover:via-[#2a1820]/40 transition-all duration-700" />
 
                     {/* Content */}
                     <div className="absolute inset-0 flex flex-col items-center justify-end p-6 text-center pb-8">
@@ -460,10 +452,8 @@ export default function HomePage() {
             className="object-cover"
           />
         </div>
-        <div className="absolute inset-0 bg-burgundy-950/88" />
-        <div className="absolute inset-0 opacity-[0.03]" style={{
-          backgroundImage: `repeating-linear-gradient(90deg, transparent, transparent 100px, rgba(201,168,76,0.5) 100px, rgba(201,168,76,0.5) 101px)`,
-        }} />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#1f1418]/95 via-[#2a1820]/90 to-[#1f1418]/95" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(145,31,54,0.35)_0%,transparent_60%)]" />
 
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
           <AnimateOnScroll>

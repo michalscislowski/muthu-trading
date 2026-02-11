@@ -50,11 +50,12 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero Banner */}
-      <section className="relative pt-32 pb-20 bg-burgundy-950 overflow-hidden">
+      <section className="relative pt-32 pb-20 bg-[#2a1820] overflow-hidden">
         <div className="absolute inset-0">
           <Image src="/images/cargo-ships.jpg" alt="Contact" fill className="object-cover opacity-15" />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-b from-burgundy-950/70 to-burgundy-950" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#1f1418]/95 via-[#2a1820]/85 to-[#2a1820]/60" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#911f36]/30 via-[#911f36]/15 to-transparent" />
         <div className="absolute inset-0 opacity-[0.03]" style={{
           backgroundImage: `repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(201,168,76,0.5) 35px, rgba(201,168,76,0.5) 36px)`,
         }} />
@@ -85,9 +86,9 @@ export default function ContactPage() {
           <div className="grid lg:grid-cols-[1fr_420px] gap-12 lg:gap-16">
             {/* Form */}
             <AnimateOnScroll animation="slide-left">
-              <div className="bg-burgundy-950 rounded-2xl p-8 md:p-10 relative overflow-hidden">
+              <div className="bg-[#2a1820] rounded-2xl p-8 md:p-10 relative overflow-hidden">
                 {/* Background accents */}
-                <div className="absolute top-0 right-0 w-64 h-64 bg-burgundy-800/20 rounded-full blur-3xl" />
+                <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(145,31,54,0.2)_0%,transparent_50%)]" />
                 <div className="absolute bottom-0 left-0 w-48 h-48 bg-gold-500/5 rounded-full blur-2xl" />
 
                 <div className="relative z-10">
@@ -149,7 +150,7 @@ export default function ContactPage() {
                     fill
                     className="object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-burgundy-950/60 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-burgundy-900/60 to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 p-5">
                     <span className="font-heading text-gold-400 text-xs tracking-[0.2em] uppercase">
                       Our Global Reach
