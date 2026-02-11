@@ -169,12 +169,12 @@ export default function Navbar() {
         <div className="flex justify-end px-6 pt-5">
           <button
             onClick={() => setMobileOpen(false)}
-            className="flex flex-col gap-1.5 p-2"
+            className="p-2 text-cream-200 hover:text-gold-400 transition-colors"
             aria-label="Close menu"
           >
-            <span className="w-6 h-0.5 bg-cream-200 rotate-45 translate-y-2 transition-all duration-300" />
-            <span className="w-6 h-0.5 bg-cream-200 opacity-0 transition-all duration-300" />
-            <span className="w-6 h-0.5 bg-cream-200 -rotate-45 -translate-y-2 transition-all duration-300" />
+            <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            </svg>
           </button>
         </div>
 
