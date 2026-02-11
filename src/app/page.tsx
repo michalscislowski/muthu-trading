@@ -107,7 +107,7 @@ export default function HomePage() {
           />
         </div>
         {/* Dark overlay with burgundy tint */}
-        <div className="absolute inset-0 bg-gradient-to-b from-burgundy-950/85 via-burgundy-950/75 to-burgundy-950/90" />
+        <div className="absolute inset-0 bg-burgundy-950/85" />
         {/* Gold radial accents */}
         <div
           className="absolute inset-0"
@@ -120,7 +120,6 @@ export default function HomePage() {
         <div className="absolute inset-0 opacity-[0.04]" style={{
           backgroundImage: `repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(201,168,76,0.4) 35px, rgba(201,168,76,0.4) 36px)`,
         }} />
-        <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-cream-100 to-transparent z-10" />
 
         <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
           {/* Overline */}
@@ -242,10 +241,10 @@ export default function HomePage() {
                 </div>
 
                 {/* Overlapping smaller image */}
-                <div className="absolute -bottom-8 -left-8 w-[55%] aspect-[4/3] rounded-xl overflow-hidden shadow-2xl border-4 border-cream-100 group">
+                <div className="absolute -bottom-8 -left-8 w-[65%] aspect-[16/9] rounded-xl overflow-hidden shadow-2xl border-4 border-cream-100 group">
                   <Image
-                    src="/images/cargo-ships.jpg"
-                    alt="Cargo ships"
+                    src="/images/consultation.png"
+                    alt="Business consultancy"
                     fill
                     className="object-cover img-zoom"
                   />
