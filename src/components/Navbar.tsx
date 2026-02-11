@@ -159,48 +159,85 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       <div
-        className={`lg:hidden fixed inset-0 top-0 bg-burgundy-950/98 backdrop-blur-lg z-40 transition-all duration-500 ${
+        className={`lg:hidden fixed inset-0 bg-burgundy-950 z-[60] transition-all duration-500 overflow-y-auto ${
           mobileOpen
             ? "opacity-100 pointer-events-auto"
             : "opacity-0 pointer-events-none"
         }`}
       >
-        <div className="flex flex-col items-center justify-center h-full gap-6">
+        {/* Close button */}
+        <div className="flex justify-end px-6 pt-5">
+          <button
+            onClick={() => setMobileOpen(false)}
+            className="flex flex-col gap-1.5 p-2"
+            aria-label="Close menu"
+          >
+            <span className="w-6 h-0.5 bg-cream-200 rotate-45 translate-y-2 transition-all duration-300" />
+            <span className="w-6 h-0.5 bg-cream-200 opacity-0 transition-all duration-300" />
+            <span className="w-6 h-0.5 bg-cream-200 -rotate-45 -translate-y-2 transition-all duration-300" />
+          </button>
+        </div>
+
+        <div className="flex flex-col items-center pt-8 pb-12 px-6 gap-1">
           <Link
             href="/"
             onClick={() => setMobileOpen(false)}
-            className="font-heading text-lg tracking-widest uppercase text-cream-200 hover:text-gold-400 transition-colors"
+            className="w-full text-center py-3 font-heading text-base tracking-widest uppercase text-cream-200 hover:text-gold-400 transition-colors"
           >
             Home
           </Link>
           <Link
             href="/#about"
             onClick={() => setMobileOpen(false)}
-            className="font-heading text-lg tracking-widest uppercase text-cream-200 hover:text-gold-400 transition-colors"
+            className="w-full text-center py-3 font-heading text-base tracking-widest uppercase text-cream-200 hover:text-gold-400 transition-colors"
           >
             About Us
           </Link>
-          {productLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              onClick={() => setMobileOpen(false)}
-              className="font-heading text-lg tracking-widest uppercase text-cream-200 hover:text-gold-400 transition-colors"
+
+          {/* Products with sub-links */}
+          <div className="w-full">
+            <button
+              onClick={() => setProductsOpen(!productsOpen)}
+              className="w-full text-center py-3 font-heading text-base tracking-widest uppercase text-cream-200 hover:text-gold-400 transition-colors flex items-center justify-center gap-2"
             >
-              {link.name}
-            </Link>
-          ))}
+              Products
+              <svg
+                className={`w-3 h-3 transition-transform duration-300 ${productsOpen ? "rotate-180" : ""}`}
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div className={`overflow-hidden transition-all duration-300 ${productsOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}`}>
+              <div className="py-2 border-t border-b border-burgundy-800/50 my-1">
+                {productLinks.map((link) => (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    onClick={() => setMobileOpen(false)}
+                    className="block text-center py-2.5 font-heading text-sm tracking-wider uppercase text-cream-200/70 hover:text-gold-400 transition-colors"
+                  >
+                    {link.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+
           <Link
             href="/contact"
             onClick={() => setMobileOpen(false)}
-            className="font-heading text-lg tracking-widest uppercase text-cream-200 hover:text-gold-400 transition-colors"
+            className="w-full text-center py-3 font-heading text-base tracking-widest uppercase text-cream-200 hover:text-gold-400 transition-colors"
           >
             Contact
           </Link>
+
           <Link
             href="/contact"
             onClick={() => setMobileOpen(false)}
-            className="btn-primary mt-4"
+            className="btn-primary mt-6"
           >
             <span>Get a Quote</span>
           </Link>
