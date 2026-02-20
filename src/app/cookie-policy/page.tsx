@@ -10,7 +10,7 @@ export default function CookiePolicyPage() {
   return (
     <>
       {/* Hero Banner */}
-      <section className="relative pt-32 pb-16 bg-[#2a1820] overflow-hidden">
+      <section className="relative pt-32 pb-16 bg-[#901f36] overflow-hidden">
         <div
           className="absolute inset-0 opacity-20"
           style={{

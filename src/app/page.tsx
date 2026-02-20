@@ -106,11 +106,11 @@ export default function HomePage() {
             quality={90}
           />
         </div>
-        {/* Overlays — exact match to inspiration site */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#1f1418]/95 via-[#2a1820]/85 to-[#2a1820]/60" />
-        <div className="absolute inset-0 bg-gradient-to-br from-[#911f36]/45 via-[#911f36]/20 to-[#911f36]/35" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#1f1418] via-transparent to-transparent opacity-80" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,rgba(145,31,54,0.3)_0%,transparent_50%)]" />
+        {/* Overlays — brighter, ship visible */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#901f36]/75 via-[#901f36]/50 to-[#901f36]/25" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#901f36]/30 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#901f36]/70 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,rgba(144,31,54,0.2)_0%,transparent_50%)]" />
 
         <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
           {/* Overline */}
@@ -258,10 +258,10 @@ export default function HomePage() {
       </section>
 
       {/* ============ SERVICES ============ */}
-      <section id="services" className="relative py-24 md:py-32 bg-[#2a1820] overflow-hidden noise-overlay">
-        {/* Warm radial accents like inspiration */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(145,31,54,0.25)_0%,transparent_50%)]" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,rgba(145,31,54,0.2)_0%,transparent_40%)]" />
+      <section id="services" className="relative py-24 md:py-32 bg-[#901f36] overflow-hidden noise-overlay">
+        {/* Warm radial accents */}
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(144,31,54,0.3)_0%,transparent_50%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,rgba(144,31,54,0.25)_0%,transparent_40%)]" />
         <div className="absolute inset-0 bg-gradient-to-b from-gold-500/5 via-transparent to-gold-500/[0.03]" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-6">
@@ -292,7 +292,7 @@ export default function HomePage() {
                     />
                   </div>
                   {/* Dark overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#1f1418] via-[#2a1820]/85 to-[#2a1820]/70 group-hover:via-[#2a1820]/80 group-hover:to-[#2a1820]/60 transition-all duration-700" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#5c1422]/80 via-[#901f36]/50 to-[#901f36]/30 group-hover:via-[#901f36]/40 group-hover:to-[#901f36]/20 transition-all duration-700" />
 
                   <div className="relative z-10 p-8 md:p-10">
                     {/* Icon */}
@@ -403,7 +403,7 @@ export default function HomePage() {
                       className="object-cover img-zoom"
                     />
                     {/* Dark gradient overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#1f1418]/95 via-[#2a1820]/50 to-[#2a1820]/30 group-hover:from-[#1f1418]/90 group-hover:via-[#2a1820]/40 transition-all duration-700" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#5c1422]/90 via-[#901f36]/40 to-[#901f36]/20 group-hover:from-[#5c1422]/85 group-hover:via-[#901f36]/30 transition-all duration-700" />
 
                     {/* Content */}
                     <div className="absolute inset-0 flex flex-col items-center justify-end p-6 text-center pb-8">
@@ -452,8 +452,8 @@ export default function HomePage() {
             className="object-cover"
           />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-r from-[#1f1418]/95 via-[#2a1820]/90 to-[#1f1418]/95" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(145,31,54,0.35)_0%,transparent_60%)]" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#901f36]/90 via-[#901f36]/80 to-[#901f36]/90" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(144,31,54,0.3)_0%,transparent_60%)]" />
 
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
           <AnimateOnScroll>

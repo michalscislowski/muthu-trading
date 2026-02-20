@@ -37,7 +37,7 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-[#2a1820]/95 backdrop-blur-md shadow-lg py-3"
+          ? "bg-[#901f36]/95 backdrop-blur-md shadow-lg py-3"
           : "bg-transparent py-5"
       }`}
     >
@@ -107,12 +107,12 @@ export default function Navbar() {
                   : "opacity-0 -translate-y-2 pointer-events-none"
               }`}
             >
-              <div className="bg-burgundy-800/95 backdrop-blur-md border border-burgundy-700/30 rounded-lg shadow-2xl py-2 min-w-[220px]">
+              <div className="bg-[#901f36]/95 backdrop-blur-md border border-white/10 rounded-lg shadow-2xl py-2 min-w-[220px]">
                 {productLinks.map((link) => (
                   <Link
                     key={link.href}
                     href={link.href}
-                    className="block px-5 py-2.5 font-heading text-[12px] tracking-wider uppercase text-cream-200 hover:text-gold-400 hover:bg-burgundy-800/50 transition-all duration-200"
+                    className="block px-5 py-2.5 font-heading text-[12px] tracking-wider uppercase text-cream-200 hover:text-gold-400 hover:bg-white/10 transition-all duration-200"
                   >
                     {link.name}
                   </Link>
@@ -159,7 +159,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       <div
-        className={`lg:hidden fixed inset-0 bg-burgundy-950 z-[60] transition-all duration-500 overflow-y-auto ${
+        className={`lg:hidden fixed inset-0 bg-[#901f36] z-[60] transition-all duration-500 overflow-y-auto ${
           mobileOpen
             ? "opacity-100 pointer-events-auto"
             : "opacity-0 pointer-events-none"
@@ -211,7 +211,7 @@ export default function Navbar() {
               </svg>
             </button>
             <div className={`overflow-hidden transition-all duration-300 ${productsOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}`}>
-              <div className="py-2 border-t border-b border-burgundy-800/50 my-1">
+              <div className="py-2 border-t border-b border-white/15 my-1">
                 {productLinks.map((link) => (
                   <Link
                     key={link.href}

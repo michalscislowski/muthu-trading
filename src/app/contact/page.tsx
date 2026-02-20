@@ -50,12 +50,12 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero Banner */}
-      <section className="relative pt-32 pb-20 bg-[#2a1820] overflow-hidden">
+      <section className="relative pt-32 pb-20 bg-[#901f36] overflow-hidden">
         <div className="absolute inset-0">
-          <Image src="/images/cargo-ships.jpg" alt="Contact" fill className="object-cover opacity-15" />
+          <Image src="/images/cargo-ships.jpg" alt="Contact" fill className="object-cover opacity-20" />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-r from-[#1f1418]/95 via-[#2a1820]/85 to-[#2a1820]/60" />
-        <div className="absolute inset-0 bg-gradient-to-br from-[#911f36]/30 via-[#911f36]/15 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#901f36]/90 via-[#901f36]/75 to-[#901f36]/50" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#901f36]/30 via-transparent to-transparent" />
         <div className="absolute inset-0 opacity-[0.03]" style={{
           backgroundImage: `repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(201,168,76,0.5) 35px, rgba(201,168,76,0.5) 36px)`,
         }} />
@@ -86,9 +86,9 @@ export default function ContactPage() {
           <div className="grid lg:grid-cols-[1fr_420px] gap-12 lg:gap-16">
             {/* Form */}
             <AnimateOnScroll animation="slide-left">
-              <div className="bg-[#2a1820] rounded-2xl p-8 md:p-10 relative overflow-hidden">
+              <div className="bg-[#901f36] rounded-2xl p-8 md:p-10 relative overflow-hidden">
                 {/* Background accents */}
-                <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(145,31,54,0.2)_0%,transparent_50%)]" />
+                <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(144,31,54,0.3)_0%,transparent_50%)]" />
                 <div className="absolute bottom-0 left-0 w-48 h-48 bg-gold-500/5 rounded-full blur-2xl" />
 
                 <div className="relative z-10">
